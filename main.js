@@ -74,7 +74,7 @@ const expelledOnDom = (array) => {
     domString += `<div class="card text-center" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Oh, no!</h5>
-          <p class="card-text">${student.name} has joined the Dark Army!</p>
+          <p class="card-text"><strong>${student.name}</strong> has joined the Dark Army!</p>
         </div>
       </div>
     `
@@ -93,3 +93,33 @@ document.querySelector("#students").addEventListener('click', (e) => {
   expelledOnDom(expelledArr);
   };
 });
+
+const filters = () => {
+  let domString = "";
+  domString += `
+  <button type="button" id="gryffindor" class="btn btn-primary">Gryffindor</button>
+  <button type="button" id="slytherin" class="btn btn-success">Slytherin</button>
+  <button type="button" id="hufflepuff" class="btn btn-danger">Hufflepuff</button>
+  <button type="button" id="ravenclaw" class="btn btn-primary">Ravenclaw</button>
+  <button type="button" id="show-all" class="btn btn-primary">Show All</button>
+  `
+  renderToDom('#filter-container', domString)
+}
+
+document.querySelector("#filter-container").addEventListener('click', (e) => {
+  if (e.target.id === 'show-all') {
+    studentOnDom(studentArr);
+  } else if (e.target.id === 'gryffindor') {
+    const gryfArr = studentArr.filter(student => student.house === "Gryffindor")
+    studentOnDom(gryfArr);
+  } else if (e.target.id === 'slytherin') {
+    const slythArr = studentArr.filter(student => student.house === "Slytherin")
+    studentOnDom(slythArr);
+  } else if (e.target.id === 'hufflepuff') {
+    const huffArr = studentArr.filter(student => student.house === "Hufflepuff")
+    studentOnDom(huffArr);
+  } else if (e.target.id === 'ravenclaw') {
+    const ravArr = studentArr.filter(student => student.house === "Ravenclaw")
+    studentOnDom(ravArr);
+  };
+})
