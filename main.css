@@ -1,3 +1,138 @@
 body {
-  background-color: #335c67;
+  background-color: #540b0e;
+  font-family: 'Comfortaa', cursive;
+}
+
+.card-intro {
+  background-color: #540b0e;
+  color: #fff3b0;
+  border: none;
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.form-style {
+  color: #540b0e;
+}
+
+h1, h4 {
+  font-weight: bold;
+  color: #fff3b0;
+}
+
+.sort-btn {
+  margin-top: 10px;
+}
+
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.enter-btn,
+.all-btn,
+.sort-btn {
+  border: 2px solid #fff3b0;
+  color: #fff3b0;
+}
+
+.enter-btn:hover,
+.all-btn:hover,
+.sort-btn:hover {
+  background-color: #fff3b0;
+  color: #540b0e;
+  transition: 0.3s;
+}
+
+.gryf-btn {
+  border: 2px solid #fff3b0;
+  color: #fff3b0;
+}
+
+.gryf-btn:hover {
+  background-color: #fff3b0;
+  color: #540b0e !important;
+  transition: 0.3s;
+}
+
+.sly-btn {
+  border: 2px solid #b4ff43;
+  color: #fff3b0;
+}
+
+.sly-btn:hover {
+  border: none;
+  background-color: #b4ff43;
+  color: black;
+  transition: 0.3s;
+}
+
+.huff-btn {
+  border: 2px solid #57fff9;
+  color: #fff3b0;
+}
+
+.huff-btn:hover {
+  border: none;
+  background-color: #57fff9;
+  color: black;
+  transition: 0.3s;
+}
+
+.rave-btn {
+  border: 2px solid #748bff;
+  color: #fff3b0;
+}
+
+.rave-btn:hover {
+  border: none;
+  background-color: #748bff;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.student-parent,
+.expel-parent {
+  width: 600px;
+  border-radius: 15px;
+  background-color: #fff3b0;
+}
+
+.student-parent {
+  float: left;
+  background-color: #fff3b0;
+}
+
+.expel-parent {
+  float: right;
+  background-color: #232323;
+
+}
+
+.student-child 
+.expel-child {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+hr {
+  border: 1px solid #fff3b0;
+}
+
+p {
+  margin-top: 10px;
 }
