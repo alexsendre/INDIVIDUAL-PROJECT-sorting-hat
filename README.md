@@ -55,3 +55,13 @@ Think of a way you can expel students without just hiding those divs on the page
 - House Colors: The color of the student's card changes depending on which house they were sorted.
 - Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
 
+# POST PROGRAMMING
+
+## WELCOME TO THE SORTING HAT!
+As you enter this application, you will be prompted to type in your name and sort to a random house inside the school of Hogwarts! Beware of the incredible power of the expulsion, as you deem a student unfit, some other group may not. 
+
+## PLANNING 
+- Took a while to do, but glad I did. I was able to breakdown all of the elements I needed for this project.
+- Figuring out a way to make the expel button work took the longest time, but all i was missing was some brackets. 
+- Styling with Bootstrap has its pros, but also its cons. Configuring the styling took longer than I would've hoped, but the job got done regardless!
+- OH, you wanted to see the site? The site I created? Sure, https://as-sortinghat-proj.netlify.app/
