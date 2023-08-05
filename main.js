@@ -26,7 +26,7 @@ const renderToDom = (divId, htmlRender) => {
 const entryForm = () => {
   let formString = `
     <form>
-      <div class="mb-3">
+      <div class="mb-2">
         <label for="name" class="form-label"><h4>Enter Name:</h4></label>
         <input type="text" class="form-control" id="name" placeholder="Harry Potter" required>
         <button type="submit" id="show-form" class="btn btn-outline-light sort-btn">SORT!</button>
@@ -56,6 +56,9 @@ const formInput = (e) => {
 }
 
 // DOM MANIPULATOR FUNCTIONS
+
+
+
 const studentOnDom = (array) => {
   let domString = "";
   array.forEach(student => {
