@@ -34,8 +34,8 @@ h1, h4 {
 .filter-btns {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 30px;
+  margin: 15px 0;
 }
 
 .enter-btn,

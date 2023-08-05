@@ -68,7 +68,7 @@ const studentOnDom = (array) => {
       background-color:${student.house == "Gryffindor" ? "#540b0e" : student.house == "Slytherin" ? "#b4ff43" : student.house == "Ravenclaw" ? "#748bff" : "#57fff9"};
       color:${student.house == "Gryffindor" ? "#fff3b0" : student.house == "Slytherin" ? "black" : student.house == "Ravenclaw" ? "black" : "black"}">
         <div class="card-body flex-wrap">
-          <h5 class="card-title"><strong>${student.name}</strong></h5>
+          <h4 class="card-title"><strong>${student.name}</strong></h4>
           <p class="card-text">${student.house} </p>
           <button type="button" id="expel-btn--${student.id}" class="btn btn-danger">EXPEL</button>
         </div>
@@ -83,9 +83,9 @@ const expelledOnDom = (array) => {
   let domString = "";
   array.forEach(student => {
     domString += `
-      <div class="card text-center expel-child" style="width: 18rem;background-color:black;color:white;">
+      <div class="card text-center expel-child" style="width: 225px;height: auto;background-color:black;color:white;">
         <div class="card-body">
-          <h5 class="card-title">Oh, no!</h5>
+          <h4 class="card-title">Oh, no!</h4>
           <p class="card-text"><strong>${student.name}</strong> has joined the <strong style="color: red;font-weight: bold;">Dark Army</strong>!</p>
         </div>
       </div>
